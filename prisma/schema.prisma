@@ -1,0 +1,26 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model LicenseKey {
+  id        Int      @id @default(autoincrement())
+  keyHash   String
+  token     String? 
+  isActive  Boolean  @default(true)
+  templates PrnTemplate[]
+}
+
+model PrnTemplate {
+  id           Int      @id @default(autoincrement())
+  templateName String
+  prnText      String
+  isDefault    Boolean  @default(false)
+  userId       Int
+  user         LicenseKey @relation(fields: [userId], references: [id])
+  createdAt    DateTime @default(now())
+}
