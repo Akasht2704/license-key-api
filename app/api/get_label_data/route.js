@@ -24,22 +24,8 @@ export async function GET(request) {
                          PoductName:'P2NAME',
                          MRP:'INR 200',
                          QRCODE:'XYZ2'
-                     },
-                     {
-                         PoductName:'P3NAME',
-                         MRP:'INR 300',
-                         QRCODE:'XYZ3'
-                     },
-                     {
-                         PoductName:'P4NAME',
-                         MRP:'INR 400',
-                         QRCODE:'XYZ4'
-                     },
-                     {
-                         PoductName:'P5NAME',
-                         MRP:'INR 500',
-                         QRCODE:'XYZ5'
-                     },
+                     }
+                     
                   ] }, { status: 200 });
             } else {
                 return NextResponse.json({success: false, message:'Invalid Params' }, { status: 400 });
