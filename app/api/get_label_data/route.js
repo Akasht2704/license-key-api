@@ -24,6 +24,36 @@ export async function GET(request) {
                          PoductName:'P2NAME',
                          MRP:'INR 200',
                          QRCODE:'XYZ2'
+                     },
+                     {
+                         PoductName:'P3NAME',
+                         MRP:'INR 300',
+                         QRCODE:'XYZ3'
+                     },
+                     {
+                         PoductName:'P4NAME',
+                         MRP:'INR 400',
+                         QRCODE:'XYZ4'
+                     },
+                     {
+                         PoductName:'P5NAME',
+                         MRP:'INR 500',
+                         QRCODE:'XYZ5'
+                     },
+                     {
+                         PoductName:'P6NAME',
+                         MRP:'INR 600',
+                         QRCODE:'XYZ6'
+                     },
+                     {
+                         PoductName:'P7NAME',
+                         MRP:'INR 700',
+                         QRCODE:'XYZ7'
+                     },
+                     {
+                         PoductName:'P8NAME',
+                         MRP:'INR 800',
+                         QRCODE:'XYZ8'
                      }
                      
                   ] }, { status: 200 });
@@ -33,10 +63,6 @@ export async function GET(request) {
         
     } catch (error) {
         return NextResponse.json({ success: false, message: 'Internal Server Error' }, { status: 500 });
-        
-    }
-
-   
-
-    
+  
+    }   
 }
