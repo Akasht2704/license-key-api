@@ -23,7 +23,7 @@ export async function GET(request) {
                      {
                          PoductName:'P2NAME',
                          MRP:'INR 200',
-                         QRCODE:'XYZ2'
+                         
                      },
                      {
                          PoductName:'P3NAME',
@@ -33,7 +33,7 @@ export async function GET(request) {
                      {
                          PoductName:'P4NAME',
                          MRP:'INR 400',
-                         QRCODE:'XYZ4'
+                         
                      },
                      {
                          PoductName:'P5NAME',
